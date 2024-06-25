@@ -1,13 +1,18 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.calendar-style .MuiPickersCalendarHeader-root {
+  background-color: #f0f0f0; /* Example: Changing the header background color */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.calendar-style .MuiPickersDay-today {
+  background-color: #ff0000; /* Example: Changing today's background color */
+}
+
+.calendar-style .MuiPickersDay-root {
+  color: #0000ff; /* Example: Changing the text color of the days */
+  width: 50vw;
 }
